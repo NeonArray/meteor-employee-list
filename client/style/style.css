@@ -1,13 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700");
+
 body {
-  background: #ececec;
+  background: #e2e1e0;
+  font-family: "Roboto", sans-serif;
+  padding: 2rem 0;
+}
+
+.employee {
+  background: #fff;
+  border-radius: 2px;
+  flex-grow: 1;
+  margin: 0 2rem 5rem 0;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  width: 300px;
+}
+
+.employee:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.employee--avatar img {
+  border-radius: 26px 0 25px 0;
+  border: 2px solid #e2e1e0;
+  display: block;
+  margin: 0 auto;
+  transform: translateY(-15px);
+  width: 128px;
+}
+
+.employee--meta {
+  font-weight: 100;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.employee--meta p {
+  font-size: .8em;
+  margin: 0;
+}
+
+.employee--name {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: .7rem 0 0 0;
+  text-align: center;
 }
 
 .employee-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-around;
-}
-
-.thumbnail {
-  width: 300px;
 }
